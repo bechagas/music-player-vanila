@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/bechagas/music-player-vanila">
+    <a href="https://devchallenges.io/solution/66472">
       Solution
     </a>
     <span> | </span>
