@@ -85,7 +85,7 @@ $ cd music-player-vanila
 
 # Add your songs in the tracks folder or use external URL
 
-# Open index.html in your browser
+# Open index.html in your browser with Live Server
 ```
 
 ## Author
