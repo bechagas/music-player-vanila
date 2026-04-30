@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: url('./assets/images/gradient-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #E5E7EB;
+}
+
+.player-container {
+  background: #121826a6;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 380px;
+  padding: 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cover-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+#cover-image {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.info-wrapper {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#song-title {
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #E5E7EB;
+}
+
+#song-artist {
+  font-size: 0.75rem; /* 12px */
+  color: #4D5562;
+  font-weight: 400;
+}
+
+.progress-wrapper {
+  margin-bottom: 2rem;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.625rem; /* 10px */
+  color: #4D5562;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, #C93B76 0%, #E5E7EB33 0%);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.1s ease;
+}
+
+#progress-bar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  border-radius: 2px;
+}
+
+#progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #C93B76;
+  margin-top: -4px;
+  box-shadow: 0 0 10px rgba(201, 59, 118, 0.5);
+}
+
+/* Para Firefox */
+#progress-bar::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #C93B76;
+  border: none;
+  box-shadow: 0 0 10px rgba(201, 59, 118, 0.5);
+}
+
+.controls-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.controls-wrapper button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.controls-wrapper button img {
+  width: 2rem; /* 32px conforme SVGs */
+  height: 2rem;
+}
+
+.controls-wrapper button:hover {
+  opacity: 0.8;
+}
+
+.controls-wrapper button:active {
+  transform: scale(0.9);
+}
+
+.play-btn {
+  background-color: #C93B76 !important;
+  width: 4rem; /* 64px approx */
+  height: 4rem;
+  border-radius: 50%;
+  filter: drop-shadow(0px 8px 16px rgba(201, 59, 118, 0.25));
+  transition: background-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.play-btn:hover {
+  background-color: #B5356A !important;
+  transform: scale(1.05);
+}
+
+.play-btn:active {
+  transform: scale(0.95) !important;
+}
+
+.play-btn img {
+  width: 2rem !important;
+  height: 2rem !important;
+}
