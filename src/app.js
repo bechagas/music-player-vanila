@@ -15,7 +15,7 @@ const songs = [
 
 let currentSongIndex = 0;
 
-const audio = new Audio(songs[currentSongIndex].src);
+const audio = new Audio();
 
 const songImg = document.getElementById('cover-image');
 const songTitle = document.getElementById('song-title');
@@ -34,8 +34,8 @@ function loadSong(currentIndex) {
   const { title, artist, img, src } = songs[currentIndex];
   songTitle.textContent = title;
   songArtist.textContent = artist;
-  songImg.src = `./assets/images/${img}`;
-  audio.src = `./assets/tracks/${src}`;
+  songImg.src = `./src/assets/images/${img}`;
+  audio.src = `./src/assets/tracks/${src}`;
   audio.load();
   
   updateProgressBar();
@@ -50,10 +50,10 @@ function formatTime(seconds) {
 function playMusic() {
   if (audio.paused) {
     audio.play();
-    playBtnImg.src = "./assets/icons/pause.svg";
+    playBtnImg.src = "./src/assets/icons/pause.svg";
   } else {
     audio.pause();
-    playBtnImg.src = "./assets/icons/play.svg";
+    playBtnImg.src = "./src/assets/icons/play.svg";
   }
 }
 

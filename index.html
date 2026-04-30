@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="Um player de música elegante e minimalista feito com Vanilla JS.">
+  <link rel="shortcut icon" type="image/x-icon" href="./public/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./src/styles.css">
   <title>Music Player</title>
 </head>
 <body>
   <main class="player-container" id="player-container">
     <!-- Capa do Álbum -->
     <div class="cover-wrapper">
-      <img id="cover-image" src="./assets/images/cover-1.jpg" alt="Capa do Álbum">
+      <img id="cover-image" src="./src/assets/images/cover-1.jpg" alt="Capa do Álbum">
     </div>
 
     <!-- Informações da Música -->
@@ -27,8 +27,8 @@
     <!-- Barra de Progresso e Tempo -->
     <div class="progress-wrapper">
       <div class="time-info">
-        <span id="current-time"></span>
-        <span id="duration"></span>
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
       </div>
 
       <input type="range" id="progress-bar" min="0" max="100" value="0">
@@ -37,16 +37,16 @@
     <!-- Controles do Player -->
     <div class="controls-wrapper">
       <button id="prev-btn" aria-label="Música Anterior">
-        <img src="./assets/icons/previous.svg" alt="Música Anterior" />
+        <img src="./src/assets/icons/previous.svg" alt="Música Anterior" />
       </button>
       <button id="play-btn" class="play-btn" aria-label="Tocar/Pausar">
-        <img id="player-icon" src="./assets/icons/play.svg" alt="Tocar/Pausar">
+        <img id="player-icon" src="./src/assets/icons/play.svg" alt="Tocar/Pausar">
       </button>
       <button id="next-btn" aria-label="Próxima Música">
-        <img src="./assets/icons/next.svg" alt="Próxima Música">
+        <img src="./src/assets/icons/next.svg" alt="Próxima Música">
       </button>
     </div>
   </main>
-  <script src="app.js"></script>
+  <script src="./src/app.js"></script>
 </body>
 </html>
